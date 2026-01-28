@@ -59,7 +59,6 @@ public class Sy2024bit017{
             }
             System.out.print("\n");
         }
-        System.out.print("\n\n");
     }
 
     public static void main(String str[]){
