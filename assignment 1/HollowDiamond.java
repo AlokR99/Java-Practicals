@@ -1,7 +1,7 @@
 public class HollowDiamond{
     static void method1(int size){
         if(size%2==0){
-            System.out.print("Invalid size! Enter the odd size");
+            System.out.println("Invalid size! Enter the odd size");
             return ;
         }
         int mid=(size+1)/2;
@@ -25,7 +25,7 @@ public class HollowDiamond{
 
     static void method2(int size){
         if(size%2==0){
-            System.out.print("Invalid size! Enter the odd size");
+            System.out.println("Invalid size! Enter the odd size");
             return ;
         }
         int mid=(size+1)/2;
@@ -43,7 +43,7 @@ public class HollowDiamond{
 
     static void method3(int size){
         if(size%2==0){
-            System.out.print("Invalid size! Enter the odd size");
+            System.out.println("Invalid size! Enter the odd size");
             return ;
         }
         int mid=(size+1)/2;
