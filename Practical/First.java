@@ -17,8 +17,10 @@ class Dog extends Animal{
 		System.out.println("DOG: ");
 		System.out.println("Hey! I am "+name+".");
 	}
-	
-	public static void main(String... args){
+}
+
+class FirstMain{
+	public static void main(String[] args){
 		Dog dog1=new Dog("Tommy","Mammal");
 	}
 }

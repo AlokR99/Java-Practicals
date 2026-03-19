@@ -1,45 +1,38 @@
 /*
 Demonstrating method Overriding in Java
+function Signature should be same 
+function return type should be same 
+overriding methods should be non-static
 */
 
-class Shape{
-	Shape(){
-		System.out.println("Shape Constructor called");
+class Vehicle{
+	static void sound(){
+		System.out.println("Unknown sound");
 	}
-	double Area(){
-		System.out.println("Shape Type is not cleared:");
-		return 0.0;
-	}
-}
-
-class Square extends Shape{
-	int side;
-	Square(int side){
-		this.side=side;
-		System.out.println("I am Square: "+side);
-	}
-	double Area(){
-		System.out.print("The area of the Square is:");
-		return this.side*this.side;
+	void move(){
+		System.out.println("Vehicls is moving..");
 	}
 }
 
-class Circle extends Shape{
-	int radius;
-	Circle(int radius){
-		this.radius=radius;
-		System.out.println("I am Circle with radius: "+radius);
+class Car extends Vehicle{
+	void move(){
+		System.out.println("Car is moving");
 	}
-	double Area(){
-		System.out.print("The area of the Circle is:");
-		return 3.14*this.radius*this.radius;
+	static void sound(){
+		System.out.println("hmm...hmmm");
 	}
 }
 
-class AreaCalculation{
-	Square sq=new Square(10);
-	System.out.println(sq.Area());
+class FourthMain{
+	public static void main(String[] args){
+		Car c1=new Car();
+		c1.move();
+		c1.sound();
 
-	Square c1=new Circle(10);
-	System.out.println(c1.Area());
+		//but
+
+		Vehicle v1=new Car();
+		v1.move();
+		v1.sound();//noot override it because sound( ) method is static ,can't be override 
+	}
 }

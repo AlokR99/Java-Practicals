@@ -26,8 +26,11 @@ class Ocean extends WaterBody{
 		this.name=name;
 		System.out.println("I am Ocean: "+this.name);
 	}
-	public static void main(String... args){
-		Ocean ocean1=new Ocean("Pacific","salty");
-	}	
+		
 }
 
+class ThirdMain{
+	public static void main(String... args){
+		Ocean ocean1=new Ocean("Pacific","salty");
+	}
+}
