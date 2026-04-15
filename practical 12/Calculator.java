@@ -89,7 +89,7 @@ class Main {
                         System.out.println(e.getMessage());
                 }
                 catch(InputMismatchException e){
-                        System.out.println("Enter numeric number only for choice selection, numbers and only integer for factorial\n------ ");
+                        System.out.println("Enter numeric number only for choice selection and number inputs ,and only integer for factorial\n------ ");
                         sc.nextLine();
                 }
                 catch(RecursionLimitException e){
